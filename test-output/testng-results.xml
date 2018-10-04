@@ -2,44 +2,56 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="106098" started-at="2018-09-28T07:44:48Z" finished-at="2018-09-28T07:46:34Z">
+  <suite name="Default suite" duration-ms="61562" started-at="2018-10-04T13:39:19Z" finished-at="2018-10-04T13:40:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="106098" started-at="2018-09-28T07:44:48Z" finished-at="2018-09-28T07:46:34Z">
-      <class name="testcases.HeaderlinkNavigation">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="beforeSuite" is-config="true" duration-ms="646" started-at="2018-09-28T07:44:47Z" finished-at="2018-09-28T07:44:48Z">
+    <test name="Default test" duration-ms="61562" started-at="2018-10-04T13:39:19Z" finished-at="2018-10-04T13:40:20Z">
+      <class name="testcases.LoginandLogout">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.LoginandLogout@127bd23]" name="beforeSuite" is-config="true" duration-ms="1287" started-at="2018-10-04T13:39:17Z" finished-at="2018-10-04T13:39:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="setData" is-config="true" duration-ms="0" started-at="2018-09-28T07:44:48Z" finished-at="2018-09-28T07:44:48Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.LoginandLogout@127bd23]" name="setData" is-config="true" duration-ms="0" started-at="2018-10-04T13:39:19Z" finished-at="2018-10-04T13:39:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-09-28T07:44:48Z" finished-at="2018-09-28T07:44:48Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.LoginandLogout@127bd23]" name="beforeClass" is-config="true" duration-ms="3" started-at="2018-10-04T13:39:19Z" finished-at="2018-10-04T13:39:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="beforeMethod" is-config="true" duration-ms="61624" started-at="2018-09-28T07:44:48Z" finished-at="2018-09-28T07:45:50Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.LoginandLogout@127bd23]" name="beforeMethod" is-config="true" duration-ms="22721" started-at="2018-10-04T13:39:21Z" finished-at="2018-10-04T13:39:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Headlinks()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="Headlinks" duration-ms="41038" started-at="2018-09-28T07:45:50Z" finished-at="2018-09-28T07:46:31Z">
+        <test-method status="PASS" signature="departmentstest(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginandLogout@127bd23]" name="departmentstest" duration-ms="34589" started-at="2018-10-04T13:39:44Z" data-provider="fetchData" finished-at="2018-10-04T13:40:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u.arjunkumar@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hitman12$]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Headlinks -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="afterMethod" is-config="true" duration-ms="3381" started-at="2018-09-28T07:46:31Z" finished-at="2018-09-28T07:46:34Z">
+        </test-method> <!-- departmentstest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.LoginandLogout@127bd23]" name="afterMethod" is-config="true" duration-ms="1851" started-at="2018-10-04T13:40:18Z" finished-at="2018-10-04T13:40:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-28T07:46:34Z" finished-at="2018-09-28T07:46:34Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.LoginandLogout@127bd23]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-10-04T13:40:20Z" finished-at="2018-10-04T13:40:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.HeaderlinkNavigation@127bd23]" name="afterSuite" is-config="true" duration-ms="1012" started-at="2018-09-28T07:46:36Z" finished-at="2018-09-28T07:46:37Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.LoginandLogout@127bd23]" name="afterSuite" is-config="true" duration-ms="1165" started-at="2018-10-04T13:40:22Z" finished-at="2018-10-04T13:40:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testcases.HeaderlinkNavigation -->
+      </class> <!-- testcases.LoginandLogout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

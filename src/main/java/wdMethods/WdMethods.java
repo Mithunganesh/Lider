@@ -206,7 +206,11 @@ public interface WdMethods {
 		
 		public void smallWait();
 		
-		public void backButton();
+	public void backButton();
+		
+		public void footerlink();
+		
+		public void jsclick();
 		
 		
 }

@@ -382,6 +382,7 @@ public class SeMethods extends Reporter implements WdMethods{
 		return number;
 	}
 
+
 	public void closeBrowser() {
 		try {
 			driver.close();
@@ -478,7 +479,7 @@ public void scrollBottom() {
 public void newTab() {
 	
 	List<String> browserTabs = new ArrayList<String> (driver.getWindowHandles());
-	
+	takeSnap();
 	driver.switchTo().window(browserTabs .get(1));
 	try {
 		Thread.sleep(2000);
@@ -488,6 +489,7 @@ public void newTab() {
 	}
 	takeSnap();
 	
+	 
 	driver.close();
 	driver.switchTo().window(browserTabs.get(0));
 }
@@ -512,6 +514,24 @@ public void backButton() {
 	
 	driver.navigate().back();
 	takeSnap();
+}
+
+
+public void footerlink() {
+
+	WebElement footer= driver.findElement(By.xpath("//*[contains(@class,'main-footer container')]")); // Get Footer element which contains all footer links
+	takeSnap();
+	  System.out.println(footer.findElements(By.tagName("a")).size()) ; 
+	  List<WebElement> footlinks = footer.findElements(By.tagName("a"));
+	  int i = footer.findElements(By.tagName("a")).size(); //Get number of links
+	  System.out.println("total number of footer links" +i);
+	 
+}
+
+public void jsclick() {
+	
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	jse.executeScript("document.getElementsByClassName(\"btn btn-info btn-pagar btn-block\").click();");
 }
 
 
