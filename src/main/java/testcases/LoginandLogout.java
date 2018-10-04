@@ -18,7 +18,7 @@ public class LoginandLogout extends ProjectMethods{
 		dataSheetName="TC002";
 	}
 	@Test(dataProvider="fetchData")
-	public void departmentstest(String email, String password)  {
+	public void loginandlogout(String email, String password)  {
 		
 		new HomePage_Lider()
 		.clicklogin()
