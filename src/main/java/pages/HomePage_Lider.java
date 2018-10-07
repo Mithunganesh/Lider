@@ -89,6 +89,12 @@ public class HomePage_Lider extends ProjectMethods{
 	
 	public HomePage_Lider departmenticon()
 	{
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		mouseHover(departmentslink);
 		highLighterMethod(driver, departmentslink);
 		verifyDisplayed(departmentslink);

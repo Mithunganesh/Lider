@@ -16,9 +16,9 @@ public class Productdetails extends ProjectMethods{
 	@FindBy(how=How.XPATH,using="//*[contains(@id,'add-button')]")
 	private WebElement clickaproduct;
 	
-	public Cart addingtocart()
+	public Cart addingtocart(String xpath)
 	{
-		highLighterMethod(driver, clickaproduct);
+		explicitWait(xpath);
 		click(clickaproduct);
 		try {
 			Thread.sleep(2500);

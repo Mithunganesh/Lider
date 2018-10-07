@@ -14,9 +14,10 @@ public class Cartdetails extends ProjectMethods{
 	}	
 	
 	@FindBy(how=How.XPATH,using="//*[contains(@class,'seccion-cart-cupon')]")
+	
+	
 	private WebElement verifycartpage;
 	
-	@FindBy(how=How.XPATH,using="//*[contains(@onclick,'checkForCheckout();')]")
 	private WebElement paybutton;
 	
 	
@@ -32,4 +33,26 @@ public class Cartdetails extends ProjectMethods{
 		
 		return this;
 	}
+	
+	
+
+	@FindBy(how=How.XPATH,using="//*[contains(@class,'btn btn-default btn-iconos hidden-xs btn-delete-product')]")
+	private WebElement delete;
+	
+	public Cartdetails clickdelete()
+	{
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	click(delete);
+		
+		return this;
+	}
+	
+	
+	
+	
 }

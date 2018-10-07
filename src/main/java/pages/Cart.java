@@ -24,6 +24,16 @@ public class Cart extends ProjectMethods{
 		return this;
 	}
 	
+	@FindBy(how=How.XPATH,using="//*[contains(@onclick,'clickCartPayButton();')]")
+	private WebElement checkoutbutton;
+	
+	public Orderdetails checkout()
+	{
+		
+		
+		click(checkoutbutton);
+		return new Orderdetails();
+	}
 	
 	
 
@@ -39,4 +49,15 @@ public class Cart extends ProjectMethods{
 	}
 	
 
+	@FindBy(how=How.XPATH,using="//*[contains(@id,'cartgotocartbutton')]")
+	private WebElement orderbutton;
+	
+	public Orderdetails orderdetails()
+	{
+		
+		highLighterMethod(driver, orderbutton);
+		click(orderbutton);
+		return new Orderdetails();
+	}
+	
 }

@@ -17,15 +17,15 @@ public class AddToCart extends ProjectMethods{
 		browserName="chrome";
 		dataSheetName="TC007";
 	}
-	@Test
-	public void addtocart()  {
+	@Test(dataProvider="fetchData")
+	public void addtocart(String xpath)  {
 		
 		new HomePage_Lider()
 		.departmenticon()
 		.computacian()
 		.notebook()
 .clickingaproduct()
-.addingtocart()
+.addingtocart(xpath)
 .clickcart()
 .viewcart()
 .cartmessage();

@@ -14,12 +14,13 @@ public class Notebook extends ProjectMethods{
 	}	
 	
 	@FindBy(how=How.XPATH,using="//*[contains(@title,'Notebook 15.6 / Intel Core i7 / 8 GB / 1 TB / T. Video 2 GB')]")
-	private WebElement clickaproduct;
+	private WebElement clickaproduct1;
 	
 	public Productdetails clickingaproduct()
 	{
-		highLighterMethod(driver, clickaproduct);
-		click(clickaproduct);
+		highLighterMethod(driver, clickaproduct1);
+		click(clickaproduct1);
+		
 		return new Productdetails();
 	}
 
